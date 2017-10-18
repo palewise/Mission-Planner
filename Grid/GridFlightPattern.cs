@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using GMap.NET.WindowsForms;
+using MissionPlanner.Plugin;
+
 
 namespace MissionPlanner
 {
@@ -25,7 +27,7 @@ namespace MissionPlanner
 
         public override string Author
         {
-            get { return "Michael Oborne"; }
+            get { return "Napat Jintanakosol"; }
         }
 
         public override bool Init()
@@ -35,7 +37,7 @@ namespace MissionPlanner
 
         public override bool Loaded()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridUI));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridUIFlightPattern));
             var temp = (string)(resources.GetObject("$this.Text"));
 
             but = new ToolStripMenuItem(temp);
@@ -63,7 +65,7 @@ namespace MissionPlanner
 
         public void but_Click(object sender, EventArgs e)
         {
-            using (var gridui = new GridUINew(this))
+            using (var gridui = new GridUIFlightPattern(this))
             {
                 MissionPlanner.Utilities.ThemeManager.ApplyThemeTo(gridui);
 
@@ -73,19 +75,9 @@ namespace MissionPlanner
                 }
                 else
                 {
-                    /*
-                    if (
-                        CustomMessageBox.Show("No polygon defined. Load a file?", "Load File", MessageBoxButtons.YesNo) ==
-                        DialogResult.Yes)
-                    {
-                    */
                         gridui.LoadGrid();
                         gridui.ShowDialog();
-                    //}
-                    //else
-                    //{
-                        //CustomMessageBox.Show("Please define a polygon.", "Error");
-                    //}
+                    
                 }
             }
         }
@@ -94,5 +86,7 @@ namespace MissionPlanner
         {
             return true;
         }
+
+
     }
 }

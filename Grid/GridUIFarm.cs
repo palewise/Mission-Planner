@@ -21,10 +21,12 @@ using MissionPlanner.Properties;
 using MissionPlanner.Utilities;
 using ProjNet.CoordinateSystems;
 using ProjNet.CoordinateSystems.Transformations;
+using MissionPlanner.Plugin;
+
 
 namespace MissionPlanner
 {
-    public partial class GridUINew : Form
+    public partial class GridUIFarm : Form
     {
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -59,6 +61,7 @@ namespace MissionPlanner
         int CurrentGMapMarkerIndex = 0;
         bool isMouseDown = false;
         bool isMouseDraging = false;
+        private GridSetFlight gridSetFlight;
 
         // Structures
         public struct camerainfo
@@ -126,9 +129,14 @@ namespace MissionPlanner
         }
 
         // GridUI
-        public GridUINew(GridFlightPattern plugin)
+        public GridUIFarm(GridSelectFarm plugin)
         {
             InitializeComponent();
+        }
+
+        public GridUIFarm(GridSetFlight gridSetFlight)
+        {
+            this.gridSetFlight = gridSetFlight;
         }
 
         private void GridUI_Load(object sender, EventArgs e)
@@ -153,14 +161,76 @@ namespace MissionPlanner
 
         }
 
+        /// <summary>
+        /// Added button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
         private void button1_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("bao bao");
+            GridFlightPattern grid = new GridFlightPattern();
+            grid.Host = new PluginHost();
+            grid.but_Click(sender, e);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GridFlightPattern grid = new GridFlightPattern();
+            grid.Host = new PluginHost();
+            grid.but_Click(sender, e);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            GridFlightPattern grid = new GridFlightPattern();
+            grid.Host = new PluginHost();
+            grid.but_Click(sender, e);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            GridFlightPattern grid = new GridFlightPattern();
+            grid.Host = new PluginHost();
+            grid.but_Click(sender, e);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            GridFlightPattern grid = new GridFlightPattern();
+            grid.Host = new PluginHost();
+            grid.but_Click(sender, e);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            GridFlightPattern grid = new GridFlightPattern();
+            grid.Host = new PluginHost();
+            grid.but_Click(sender, e);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            GridFlightPattern grid = new GridFlightPattern();
+            grid.Host = new PluginHost();
+            grid.but_Click(sender, e);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            GridFlightPattern grid = new GridFlightPattern();
+            grid.Host = new PluginHost();
+            grid.but_Click(sender, e);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
+
+        
+       
+
+
     }
 }

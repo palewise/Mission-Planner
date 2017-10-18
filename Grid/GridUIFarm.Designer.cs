@@ -1,6 +1,6 @@
 ﻿namespace MissionPlanner
 {
-    partial class GridUINew
+    partial class GridUIFarm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridUINew));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridUIFarm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -57,7 +57,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_01;
+            this.pictureBox1.Image = global::MissionPlanner.Properties.Resources.farmLogo;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
@@ -67,16 +67,18 @@
             resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_01;
+            this.pictureBox2.Image = global::MissionPlanner.Properties.Resources.farmLogo;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
@@ -86,10 +88,11 @@
             resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_01;
+            this.pictureBox3.Image = global::MissionPlanner.Properties.Resources.farmLogo;
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
@@ -99,10 +102,11 @@
             resources.ApplyResources(this.button4, "button4");
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_01;
+            this.pictureBox4.Image = global::MissionPlanner.Properties.Resources.farmLogo;
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
@@ -112,10 +116,11 @@
             resources.ApplyResources(this.button5, "button5");
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_01;
+            this.pictureBox5.Image = global::MissionPlanner.Properties.Resources.farmLogo;
             resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.TabStop = false;
@@ -125,10 +130,11 @@
             resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_01;
+            this.pictureBox6.Image = global::MissionPlanner.Properties.Resources.farmLogo;
             resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
@@ -138,10 +144,11 @@
             resources.ApplyResources(this.button7, "button7");
             this.button7.Name = "button7";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_01;
+            this.pictureBox7.Image = global::MissionPlanner.Properties.Resources.farmLogo;
             resources.ApplyResources(this.pictureBox7, "pictureBox7");
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.TabStop = false;
@@ -151,15 +158,16 @@
             resources.ApplyResources(this.button8, "button8");
             this.button8.Name = "button8";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_01;
+            this.pictureBox8.Image = global::MissionPlanner.Properties.Resources.farmLogo;
             resources.ApplyResources(this.pictureBox8, "pictureBox8");
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.TabStop = false;
             // 
-            // GridUINew
+            // GridUIFarm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -180,7 +188,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "GridUINew";
+            this.Name = "GridUIFarm";
             this.Load += new System.EventHandler(this.GridUI_Load);
             this.Resize += new System.EventHandler(this.GridUI_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

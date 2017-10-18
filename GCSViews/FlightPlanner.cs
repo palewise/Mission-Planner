@@ -7033,7 +7033,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void flightPattern_Click(object sender, EventArgs e)
         {
-            GridFlightPattern grid = new GridFlightPattern();
+            GridSelectFarm grid = new GridSelectFarm();
             grid.Host = new PluginHost();
             grid.but_Click(sender, e);
         }
