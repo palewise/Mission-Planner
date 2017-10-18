@@ -1,0 +1,197 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <ApplicationIcon />
+    <OutputTypeEx>library</OutputTypeEx>
+    <StartupObject />
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>True</DebugSymbols>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\Debug\net462\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenTK" Version="1.1.1589.5942" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BSE.Windows.Forms\BSE.Windows.Forms.csproj" />
+    <ProjectReference Include="..\GeoUtility\GeoUtility.csproj" />
+    <ProjectReference Include="..\GMap.NET.Core\GMap.NET.Core.csproj" />
+    <ProjectReference Include="..\GMap.NET.WindowsForms\GMap.NET.WindowsForms.csproj" />
+    <ProjectReference Include="..\Utilities\MissionPlanner.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OpenTK.GLControl">
+      <HintPath>..\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="BackstageView\BackstageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="BackstageView\BackstageView.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="BackstageView\BackstageViewButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="BackstageView\BackStageViewMenuPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="BackstageView\BackstageViewPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Coords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Coords.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="FileBrowse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="FileBrowse.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="FlashMessage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="FlashMessage.designer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="GradientBG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GradientBG.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="HorizontalProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="HorizontalProgressBar2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="HSI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="HSI.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="HUD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ImageLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ImageLabel.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="LabelWithPseudoOpacity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="LineSeparator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="myGMAP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MyLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="MyProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MyProgressBar.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MyTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="MyUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="OptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OptionForm.Designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PictureBoxMouseOver.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="PictureBoxWithPseudoOpacity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ProgressReporterDialogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProgressReporterDialogue.designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProgressReporterSphere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProgressStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ProgressStep.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="QuickView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="QuickView.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="RadialGradientBG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="RadialGradientBG.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="RangeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="RangeControl.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Sphere.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ValuesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ValuesControl.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="VerticalProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="VerticalProgressBar2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="WindDir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="WindDir.Designer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+
+
+</Project>
